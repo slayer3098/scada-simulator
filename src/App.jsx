@@ -14,7 +14,7 @@ import DefenseSystem from './core/DefenseSystem';
 import AnomalyDetector from './core/AnomalyDetector';
 
 import { SYSTEM_CONSTANTS, ALERT_LEVELS } from './utils/constants';
-import { generateId, formatTimestamp } from './utils/helpers';
+import { generateId } from './utils/helpers';
 
 function App() {
   // Core system instances
