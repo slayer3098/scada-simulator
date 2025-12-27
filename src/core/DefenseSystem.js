@@ -1,5 +1,4 @@
 import { SYSTEM_CONSTANTS } from '../utils/constants';
-import { generateId } from '../utils/helpers';
 
 /**
  * Defense System

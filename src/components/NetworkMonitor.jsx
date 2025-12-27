@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Network, Activity, Filter, Search } from 'lucide-react';
+import { Network, Filter, Search } from 'lucide-react';
 import { formatTimestamp, toHex } from '../utils/helpers';
 
 const NetworkMonitor = ({ networkTraffic, isRunning }) => {
