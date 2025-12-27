@@ -62,13 +62,6 @@ export const SYSTEM_CONSTANTS = {
     RATE_LIMIT: 0.75
   },
 
-  // Alert Severity Levels
-  ALERT_LEVELS: {
-    INFO: 'info',
-    WARNING: 'warning',
-    CRITICAL: 'critical'
-  },
-
   // Simulation Parameters
   SIMULATION: {
     UPDATE_INTERVAL: 1000, // ms
@@ -76,6 +69,13 @@ export const SYSTEM_CONSTANTS = {
     ANOMALY_THRESHOLD: 75, // score 0-100
     MAX_PACKET_SIZE: 260 // bytes
   }
+};
+
+// Alert Severity Levels (exported separately for easier access)
+export const ALERT_LEVELS = {
+  INFO: 'info',
+  WARNING: 'warning',
+  CRITICAL: 'critical'
 };
 
 export const ALERT_COLORS = {
