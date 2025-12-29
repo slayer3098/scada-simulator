@@ -236,23 +236,19 @@ const DefenseControl = ({ defenseStatus, onToggleDefense, onEnableAll }) => {
                     {defense.description}
                   </p>
                 </div>
-                <label style={{
-                  position: 'relative',
-                  display: 'inline-block',
-                  width: '52px',
-                  height: '28px'
-                }}>
-                  <input
-                    type="checkbox"
-                    checked={isEnabled}
-                    onChange={(e) => onToggleDefense(defense.id, e.target.checked)}
-                    style={{ display: 'none' }}
-                  />
+                <div
+                  onClick={() => onToggleDefense(defense.id, !isEnabled)}
+                  style={{
+                    position: 'relative',
+                    display: 'inline-block',
+                    width: '52px',
+                    height: '28px',
+                    cursor: 'pointer'
+                  }}
+                >
                   <span
-                    onClick={() => onToggleDefense(defense.id, !isEnabled)}
                     style={{
                       position: 'absolute',
-                      cursor: 'pointer',
                       top: 0,
                       left: 0,
                       right: 0,
@@ -276,7 +272,7 @@ const DefenseControl = ({ defenseStatus, onToggleDefense, onEnableAll }) => {
                       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
                     }} />
                   </span>
-                </label>
+                </div>
               </div>
 
               <div style={{ marginBottom: '12px' }}>
