@@ -32,20 +32,19 @@ const Dashboard = ({ isRunning, onStart, onStop, onReset, metrics }) => {
 
   return (
     <div style={{
-      padding: '24px',
-      background: '#ffffff',
-      minHeight: '100vh'
+      padding: '16px',
+      background: '#ffffff'
     }}>
       {/* Header Section */}
       <div style={{
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: '32px',
-        padding: '24px',
+        marginBottom: '16px',
+        padding: '16px',
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        borderRadius: '16px',
-        boxShadow: '0 10px 30px rgba(102, 126, 234, 0.2)'
+        borderRadius: '12px',
+        boxShadow: '0 8px 20px rgba(102, 126, 234, 0.15)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{
